@@ -1,0 +1,286 @@
+
+Discarded input sections
+
+ .text          0x00000000        0x0 ..\obj\system_stm32f10x.o
+ .data          0x00000000       0x14 ..\obj\system_stm32f10x.o
+ .bss           0x00000000        0x0 ..\obj\system_stm32f10x.o
+ .text.SystemCoreClockUpdate
+                0x00000000       0xd8 ..\obj\system_stm32f10x.o
+ .text          0x00000000        0x0 ..\obj\USART_Driver.o
+ .data          0x00000000        0x0 ..\obj\USART_Driver.o
+ .bss           0x00000000        0x0 ..\obj\USART_Driver.o
+ .text          0x00000000        0x0 ..\obj\startup_stm32f10x_md.o
+ .data          0x00000000        0x0 ..\obj\startup_stm32f10x_md.o
+ .bss           0x00000000        0x0 ..\obj\startup_stm32f10x_md.o
+ .text          0x00000000        0x0 ..\obj\main.o
+ .data          0x00000000        0x0 ..\obj\main.o
+ .bss           0x00000000        0x0 ..\obj\main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x08000000         0x00010000         xr
+ram              0x20000000         0x00005000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x20005000                _eram = 0x20005000
+
+.text           0x08000000      0x464
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x10c ..\obj\startup_stm32f10x_md.o
+                0x08000000                g_pfnVectors
+ *(.text*)
+ .text.SystemInit
+                0x0800010c       0x68 ..\obj\system_stm32f10x.o
+                0x0800010c                SystemInit
+ .text.SetSysClock
+                0x08000174        0xc ..\obj\system_stm32f10x.o
+ .text.SetSysClockTo72
+                0x08000180      0x100 ..\obj\system_stm32f10x.o
+ .text.USART_INIT
+                0x08000280       0xe4 ..\obj\USART_Driver.o
+                0x08000280                USART_INIT
+ .text.USART_SEND_DATA
+                0x08000364       0x38 ..\obj\USART_Driver.o
+                0x08000364                USART_SEND_DATA
+ .text.USART_RECEIVE_DATA
+                0x0800039c       0x1c ..\obj\USART_Driver.o
+                0x0800039c                USART_RECEIVE_DATA
+ .text.Default_Reset_Handler
+                0x080003b8       0x60 ..\obj\startup_stm32f10x_md.o
+                0x080003b8                Default_Reset_Handler
+                0x080003b8                Reset_Handler
+ .text.Default_Handler
+                0x08000418        0x8 ..\obj\startup_stm32f10x_md.o
+                0x08000418                EXTI2_IRQHandler
+                0x08000418                DebugMon_Handler
+                0x08000418                TIM1_CC_IRQHandler
+                0x08000418                HardFault_Handler
+                0x08000418                SysTick_Handler
+                0x08000418                PVD_IRQHandler
+                0x08000418                PendSV_Handler
+                0x08000418                NMI_Handler
+                0x08000418                EXTI3_IRQHandler
+                0x08000418                EXTI0_IRQHandler
+                0x08000418                I2C2_EV_IRQHandler
+                0x08000418                UsageFault_Handler
+                0x08000418                ADC1_2_IRQHandler
+                0x08000418                SPI1_IRQHandler
+                0x08000418                TAMPER_IRQHandler
+                0x08000418                DMA1_Channel4_IRQHandler
+                0x08000418                USART3_IRQHandler
+                0x08000418                RTC_IRQHandler
+                0x08000418                DMA1_Channel7_IRQHandler
+                0x08000418                CAN1_RX1_IRQHandler
+                0x08000418                TIM4_IRQHandler
+                0x08000418                I2C1_EV_IRQHandler
+                0x08000418                DMA1_Channel6_IRQHandler
+                0x08000418                TIM3_IRQHandler
+                0x08000418                RCC_IRQHandler
+                0x08000418                TIM1_TRG_COM_IRQHandler
+                0x08000418                DMA1_Channel1_IRQHandler
+                0x08000418                EXTI15_10_IRQHandler
+                0x08000418                EXTI9_5_IRQHandler
+                0x08000418                SPI2_IRQHandler
+                0x08000418                MemManage_Handler
+                0x08000418                SVC_Handler
+                0x08000418                DMA1_Channel5_IRQHandler
+                0x08000418                EXTI4_IRQHandler
+                0x08000418                USB_LP_CAN1_RX0_IRQHandler
+                0x08000418                USB_HP_CAN1_TX_IRQHandler
+                0x08000418                DMA1_Channel3_IRQHandler
+                0x08000418                TIM1_UP_IRQHandler
+                0x08000418                WWDG_IRQHandler
+                0x08000418                TIM2_IRQHandler
+                0x08000418                TIM1_BRK_IRQHandler
+                0x08000418                EXTI1_IRQHandler
+                0x08000418                RTCAlarm_IRQHandler
+                0x08000418                USART2_IRQHandler
+                0x08000418                I2C2_ER_IRQHandler
+                0x08000418                DMA1_Channel2_IRQHandler
+                0x08000418                CAN1_SCE_IRQHandler
+                0x08000418                FLASH_IRQHandler
+                0x08000418                BusFault_Handler
+                0x08000418                USART1_IRQHandler
+                0x08000418                I2C1_ER_IRQHandler
+                0x08000418                USBWakeUp_IRQHandler
+ .text.WaitAmoment.4071
+                0x08000420       0x20 ..\obj\main.o
+ .text.main     0x08000440       0x24 ..\obj\main.o
+                0x08000440                main
+ *(.init)
+ *(.fini)
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ *(.rodata*)
+ *(.eh_fram e*)
+
+.glue_7         0x08000464        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x08000464        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x08000464        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x08000464        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x08000464        0x0
+ .iplt          0x00000000        0x0 ..\obj\system_stm32f10x.o
+
+.rel.dyn        0x08000464        0x0
+ .rel.iplt      0x00000000        0x0 ..\obj\system_stm32f10x.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x08000464                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x08000464                __exidx_end = .
+                0x08000464                __etext = .
+                0x08000464                _sidata = __etext
+
+.data           0x20000000        0x0 load address 0x08000464
+                0x20000000                __data_start__ = .
+                0x20000000                _sdata = __data_start__
+ *(vtable)
+ *(.data*)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x20000000                PROVIDE (__preinit_array_end, .)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x20000000                PROVIDE (__init_array_end, .)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+                0x20000000                PROVIDE (__fini_array_end, .)
+ *(.jcr*)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                __data_end__ = .
+                0x20000000                _edata = __data_end__
+
+.igot.plt       0x20000000        0x0
+ .igot.plt      0x00000000        0x0 ..\obj\system_stm32f10x.o
+
+.bss            0x20000000        0x0
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                __bss_start__ = .
+                0x20000000                _sbss = __bss_start__
+ *(.bss*)
+ *(COMMON)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                __bss_end__ = .
+                0x20000000                _ebss = __bss_end__
+
+.heap           0x20000000        0x0
+                0x20000000                __end__ = .
+                0x20000000                _end = __end__
+                0x20000000                end = __end__
+ *(.heap*)
+                0x20000000                __HeapLimit = .
+
+.co_stack       0x20000000      0x400
+                0x20000000                . = ALIGN (0x8)
+ *(.co_stack .co_stack.*)
+ .co_stack      0x20000000      0x400 ..\obj\startup_stm32f10x_md.o
+                0x20000000                pulStack
+                0x20005000                __StackTop = (ORIGIN (ram) + 0x5000)
+                0x20004c00                __StackLimit = (__StackTop - SIZEOF (.co_stack))
+                0x20005000                PROVIDE (__stack, __StackTop)
+                0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region ram  overflowed with stack)
+LOAD ..\obj\system_stm32f10x.o
+LOAD ..\obj\USART_Driver.o
+LOAD ..\obj\startup_stm32f10x_md.o
+LOAD ..\obj\main.o
+START GROUP
+LOAD c:/program files (x86)/gnu tools arm embedded/4.8 2013q4/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a
+LOAD c:/program files (x86)/gnu tools arm embedded/4.8 2013q4/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libg.a
+LOAD c:/program files (x86)/gnu tools arm embedded/4.8 2013q4/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a
+END GROUP
+OUTPUT(USART_Driver_trial.elf elf32-littlearm)
+
+.debug_info     0x00000000      0x8e9
+ .debug_info    0x00000000      0x44d ..\obj\system_stm32f10x.o
+ .debug_info    0x0000044d      0x338 ..\obj\USART_Driver.o
+ .debug_info    0x00000785       0xe9 ..\obj\startup_stm32f10x_md.o
+ .debug_info    0x0000086e       0x7b ..\obj\main.o
+
+.debug_abbrev   0x00000000      0x353
+ .debug_abbrev  0x00000000      0x14c ..\obj\system_stm32f10x.o
+ .debug_abbrev  0x0000014c       0xf9 ..\obj\USART_Driver.o
+ .debug_abbrev  0x00000245       0xa7 ..\obj\startup_stm32f10x_md.o
+ .debug_abbrev  0x000002ec       0x67 ..\obj\main.o
+
+.debug_aranges  0x00000000       0xb8
+ .debug_aranges
+                0x00000000       0x38 ..\obj\system_stm32f10x.o
+ .debug_aranges
+                0x00000038       0x30 ..\obj\USART_Driver.o
+ .debug_aranges
+                0x00000068       0x28 ..\obj\startup_stm32f10x_md.o
+ .debug_aranges
+                0x00000090       0x28 ..\obj\main.o
+
+.debug_ranges   0x00000000       0x78
+ .debug_ranges  0x00000000       0x28 ..\obj\system_stm32f10x.o
+ .debug_ranges  0x00000028       0x20 ..\obj\USART_Driver.o
+ .debug_ranges  0x00000048       0x18 ..\obj\startup_stm32f10x_md.o
+ .debug_ranges  0x00000060       0x18 ..\obj\main.o
+
+.debug_line     0x00000000      0x5a9
+ .debug_line    0x00000000      0x20b ..\obj\system_stm32f10x.o
+ .debug_line    0x0000020b      0x20c ..\obj\USART_Driver.o
+ .debug_line    0x00000417       0xd5 ..\obj\startup_stm32f10x_md.o
+ .debug_line    0x000004ec       0xbd ..\obj\main.o
+
+.debug_str      0x00000000      0x531
+ .debug_str     0x00000000      0x2bf ..\obj\system_stm32f10x.o
+                                0x300 (size before relaxing)
+ .debug_str     0x000002bf      0x11f ..\obj\USART_Driver.o
+                                0x29d (size before relaxing)
+ .debug_str     0x000003de       0xe3 ..\obj\startup_stm32f10x_md.o
+                                0x17a (size before relaxing)
+ .debug_str     0x000004c1       0x70 ..\obj\main.o
+                                0x12a (size before relaxing)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 ..\obj\system_stm32f10x.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ..\obj\USART_Driver.o
+ .comment       0x00000000       0x71 ..\obj\startup_stm32f10x_md.o
+ .comment       0x00000000       0x71 ..\obj\main.o
+
+.ARM.attributes
+                0x00000000       0x33
+ .ARM.attributes
+                0x00000000       0x33 ..\obj\system_stm32f10x.o
+ .ARM.attributes
+                0x00000033       0x33 ..\obj\USART_Driver.o
+ .ARM.attributes
+                0x00000066       0x33 ..\obj\startup_stm32f10x_md.o
+ .ARM.attributes
+                0x00000099       0x33 ..\obj\main.o
+
+.debug_frame    0x00000000      0x16c
+ .debug_frame   0x00000000       0x80 ..\obj\system_stm32f10x.o
+ .debug_frame   0x00000080       0x5c ..\obj\USART_Driver.o
+ .debug_frame   0x000000dc       0x48 ..\obj\startup_stm32f10x_md.o
+ .debug_frame   0x00000124       0x48 ..\obj\main.o

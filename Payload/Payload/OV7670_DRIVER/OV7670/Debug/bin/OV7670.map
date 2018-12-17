@@ -1,0 +1,302 @@
+
+Discarded input sections
+
+ .text          0x00000000        0x0 ..\obj\system_stm32f10x.o
+ .data          0x00000000       0x14 ..\obj\system_stm32f10x.o
+ .bss           0x00000000        0x0 ..\obj\system_stm32f10x.o
+ .text.SystemCoreClockUpdate
+                0x00000000       0xd8 ..\obj\system_stm32f10x.o
+ .text          0x00000000        0x0 ..\obj\startup_stm32f10x_md.o
+ .data          0x00000000        0x0 ..\obj\startup_stm32f10x_md.o
+ .bss           0x00000000        0x0 ..\obj\startup_stm32f10x_md.o
+ .text          0x00000000        0x0 ..\obj\main.o
+ .data          0x00000000        0x0 ..\obj\main.o
+ .bss           0x00000000        0x0 ..\obj\main.o
+ .text.OV7670_INIT
+                0x00000000       0x1c ..\obj\main.o
+ .text.OV7670_QVGA_RGB_565
+                0x00000000       0x30 ..\obj\main.o
+ .text.OV7670_QVGA_YUV
+                0x00000000       0x30 ..\obj\main.o
+ .text.OV7670_CIF_RGB_565
+                0x00000000       0x30 ..\obj\main.o
+ .text.OV7670_CIF_YUV
+                0x00000000       0x30 ..\obj\main.o
+ .text.OV7670_CONFIGURATION
+                0x00000000       0xac ..\obj\main.o
+ .text.OV7670_REST_REG
+                0x00000000       0x28 ..\obj\main.o
+ .text          0x00000000        0x0 ..\obj\OV7670_Func.o
+ .data          0x00000000        0x0 ..\obj\OV7670_Func.o
+ .bss           0x00000000        0x0 ..\obj\OV7670_Func.o
+ .text.OV7670_INIT
+                0x00000000       0x1c ..\obj\OV7670_Func.o
+ .text.OV7670_QVGA_RGB_565
+                0x00000000       0x30 ..\obj\OV7670_Func.o
+ .text.OV7670_QVGA_YUV
+                0x00000000       0x30 ..\obj\OV7670_Func.o
+ .text.OV7670_CIF_RGB_565
+                0x00000000       0x30 ..\obj\OV7670_Func.o
+ .text.OV7670_CIF_YUV
+                0x00000000       0x30 ..\obj\OV7670_Func.o
+ .text.OV7670_CONFIGURATION
+                0x00000000       0xac ..\obj\OV7670_Func.o
+ .text.OV7670_REST_REG
+                0x00000000       0x28 ..\obj\OV7670_Func.o
+ .debug_info    0x00000000       0xaa ..\obj\OV7670_Func.o
+ .debug_abbrev  0x00000000       0x42 ..\obj\OV7670_Func.o
+ .debug_aranges
+                0x00000000       0x50 ..\obj\OV7670_Func.o
+ .debug_ranges  0x00000000       0x40 ..\obj\OV7670_Func.o
+ .debug_line    0x00000000      0x114 ..\obj\OV7670_Func.o
+ .debug_str     0x00000000      0x162 ..\obj\OV7670_Func.o
+ .comment       0x00000000       0x71 ..\obj\OV7670_Func.o
+ .ARM.attributes
+                0x00000000       0x33 ..\obj\OV7670_Func.o
+ .debug_frame   0x00000000       0xb8 ..\obj\OV7670_Func.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x08000000         0x00010000         xr
+ram              0x20000000         0x00005000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x20005000                _eram = 0x20005000
+
+.text           0x08000000      0x2f0
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x10c ..\obj\startup_stm32f10x_md.o
+                0x08000000                g_pfnVectors
+ *(.text*)
+ .text.SystemInit
+                0x0800010c       0x68 ..\obj\system_stm32f10x.o
+                0x0800010c                SystemInit
+ .text.SetSysClock
+                0x08000174        0xc ..\obj\system_stm32f10x.o
+ .text.SetSysClockTo72
+                0x08000180      0x100 ..\obj\system_stm32f10x.o
+ .text.Default_Reset_Handler
+                0x08000280       0x60 ..\obj\startup_stm32f10x_md.o
+                0x08000280                Default_Reset_Handler
+                0x08000280                Reset_Handler
+ .text.Default_Handler
+                0x080002e0        0x8 ..\obj\startup_stm32f10x_md.o
+                0x080002e0                EXTI2_IRQHandler
+                0x080002e0                DebugMon_Handler
+                0x080002e0                TIM1_CC_IRQHandler
+                0x080002e0                HardFault_Handler
+                0x080002e0                SysTick_Handler
+                0x080002e0                PVD_IRQHandler
+                0x080002e0                PendSV_Handler
+                0x080002e0                NMI_Handler
+                0x080002e0                EXTI3_IRQHandler
+                0x080002e0                EXTI0_IRQHandler
+                0x080002e0                I2C2_EV_IRQHandler
+                0x080002e0                UsageFault_Handler
+                0x080002e0                ADC1_2_IRQHandler
+                0x080002e0                SPI1_IRQHandler
+                0x080002e0                TAMPER_IRQHandler
+                0x080002e0                DMA1_Channel4_IRQHandler
+                0x080002e0                USART3_IRQHandler
+                0x080002e0                RTC_IRQHandler
+                0x080002e0                DMA1_Channel7_IRQHandler
+                0x080002e0                CAN1_RX1_IRQHandler
+                0x080002e0                TIM4_IRQHandler
+                0x080002e0                I2C1_EV_IRQHandler
+                0x080002e0                DMA1_Channel6_IRQHandler
+                0x080002e0                TIM3_IRQHandler
+                0x080002e0                RCC_IRQHandler
+                0x080002e0                TIM1_TRG_COM_IRQHandler
+                0x080002e0                DMA1_Channel1_IRQHandler
+                0x080002e0                EXTI15_10_IRQHandler
+                0x080002e0                EXTI9_5_IRQHandler
+                0x080002e0                SPI2_IRQHandler
+                0x080002e0                MemManage_Handler
+                0x080002e0                SVC_Handler
+                0x080002e0                DMA1_Channel5_IRQHandler
+                0x080002e0                EXTI4_IRQHandler
+                0x080002e0                USB_LP_CAN1_RX0_IRQHandler
+                0x080002e0                USB_HP_CAN1_TX_IRQHandler
+                0x080002e0                DMA1_Channel3_IRQHandler
+                0x080002e0                TIM1_UP_IRQHandler
+                0x080002e0                WWDG_IRQHandler
+                0x080002e0                TIM2_IRQHandler
+                0x080002e0                TIM1_BRK_IRQHandler
+                0x080002e0                EXTI1_IRQHandler
+                0x080002e0                RTCAlarm_IRQHandler
+                0x080002e0                USART2_IRQHandler
+                0x080002e0                I2C2_ER_IRQHandler
+                0x080002e0                DMA1_Channel2_IRQHandler
+                0x080002e0                CAN1_SCE_IRQHandler
+                0x080002e0                FLASH_IRQHandler
+                0x080002e0                BusFault_Handler
+                0x080002e0                USART1_IRQHandler
+                0x080002e0                I2C1_ER_IRQHandler
+                0x080002e0                USBWakeUp_IRQHandler
+ .text.main     0x080002e8        0x8 ..\obj\main.o
+                0x080002e8                main
+ *(.init)
+ *(.fini)
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ *(.rodata*)
+ *(.eh_fram e*)
+
+.glue_7         0x080002f0        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x080002f0        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x080002f0        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x080002f0        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x080002f0        0x0
+ .iplt          0x00000000        0x0 ..\obj\system_stm32f10x.o
+
+.rel.dyn        0x080002f0        0x0
+ .rel.iplt      0x00000000        0x0 ..\obj\system_stm32f10x.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x080002f0                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x080002f0                __exidx_end = .
+                0x080002f0                __etext = .
+                0x080002f0                _sidata = __etext
+
+.data           0x20000000        0x0 load address 0x080002f0
+                0x20000000                __data_start__ = .
+                0x20000000                _sdata = __data_start__
+ *(vtable)
+ *(.data*)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x20000000                PROVIDE (__preinit_array_end, .)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x20000000                PROVIDE (__init_array_end, .)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+                0x20000000                PROVIDE (__fini_array_end, .)
+ *(.jcr*)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                __data_end__ = .
+                0x20000000                _edata = __data_end__
+
+.igot.plt       0x20000000        0x0
+ .igot.plt      0x00000000        0x0 ..\obj\system_stm32f10x.o
+
+.bss            0x20000000        0x0
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                __bss_start__ = .
+                0x20000000                _sbss = __bss_start__
+ *(.bss*)
+ *(COMMON)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                __bss_end__ = .
+                0x20000000                _ebss = __bss_end__
+
+.heap           0x20000000        0x0
+                0x20000000                __end__ = .
+                0x20000000                _end = __end__
+                0x20000000                end = __end__
+ *(.heap*)
+                0x20000000                __HeapLimit = .
+
+.co_stack       0x20000000      0x400
+                0x20000000                . = ALIGN (0x8)
+ *(.co_stack .co_stack.*)
+ .co_stack      0x20000000      0x400 ..\obj\startup_stm32f10x_md.o
+                0x20000000                pulStack
+                0x20005000                __StackTop = (ORIGIN (ram) + 0x5000)
+                0x20004c00                __StackLimit = (__StackTop - SIZEOF (.co_stack))
+                0x20005000                PROVIDE (__stack, __StackTop)
+                0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region ram  overflowed with stack)
+LOAD ..\obj\system_stm32f10x.o
+LOAD ..\obj\startup_stm32f10x_md.o
+LOAD ..\obj\main.o
+LOAD ..\obj\OV7670_Func.o
+START GROUP
+LOAD c:/program files (x86)/gnu tools arm embedded/4.8 2013q4/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a
+LOAD c:/program files (x86)/gnu tools arm embedded/4.8 2013q4/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libg.a
+LOAD c:/program files (x86)/gnu tools arm embedded/4.8 2013q4/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a
+END GROUP
+OUTPUT(OV7670.elf elf32-littlearm)
+
+.debug_info     0x00000000      0x5fc
+ .debug_info    0x00000000      0x44d ..\obj\system_stm32f10x.o
+ .debug_info    0x0000044d       0xe9 ..\obj\startup_stm32f10x_md.o
+ .debug_info    0x00000536       0xc6 ..\obj\main.o
+
+.debug_abbrev   0x00000000      0x25a
+ .debug_abbrev  0x00000000      0x14c ..\obj\system_stm32f10x.o
+ .debug_abbrev  0x0000014c       0xa7 ..\obj\startup_stm32f10x_md.o
+ .debug_abbrev  0x000001f3       0x67 ..\obj\main.o
+
+.debug_aranges  0x00000000       0xb8
+ .debug_aranges
+                0x00000000       0x38 ..\obj\system_stm32f10x.o
+ .debug_aranges
+                0x00000038       0x28 ..\obj\startup_stm32f10x_md.o
+ .debug_aranges
+                0x00000060       0x58 ..\obj\main.o
+
+.debug_ranges   0x00000000       0x88
+ .debug_ranges  0x00000000       0x28 ..\obj\system_stm32f10x.o
+ .debug_ranges  0x00000028       0x18 ..\obj\startup_stm32f10x_md.o
+ .debug_ranges  0x00000040       0x48 ..\obj\main.o
+
+.debug_line     0x00000000      0x403
+ .debug_line    0x00000000      0x201 ..\obj\system_stm32f10x.o
+ .debug_line    0x00000201       0xd0 ..\obj\startup_stm32f10x_md.o
+ .debug_line    0x000002d1      0x132 ..\obj\main.o
+
+.debug_str      0x00000000      0x46e
+ .debug_str     0x00000000      0x2ba ..\obj\system_stm32f10x.o
+                                0x2fb (size before relaxing)
+ .debug_str     0x000002ba       0xde ..\obj\startup_stm32f10x_md.o
+                                0x175 (size before relaxing)
+ .debug_str     0x00000398       0xd6 ..\obj\main.o
+                                0x160 (size before relaxing)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 ..\obj\system_stm32f10x.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ..\obj\startup_stm32f10x_md.o
+ .comment       0x00000000       0x71 ..\obj\main.o
+
+.ARM.attributes
+                0x00000000       0x33
+ .ARM.attributes
+                0x00000000       0x33 ..\obj\system_stm32f10x.o
+ .ARM.attributes
+                0x00000033       0x33 ..\obj\startup_stm32f10x_md.o
+ .ARM.attributes
+                0x00000066       0x33 ..\obj\main.o
+
+.debug_frame    0x00000000      0x198
+ .debug_frame   0x00000000       0x80 ..\obj\system_stm32f10x.o
+ .debug_frame   0x00000080       0x48 ..\obj\startup_stm32f10x_md.o
+ .debug_frame   0x000000c8       0xd0 ..\obj\main.o

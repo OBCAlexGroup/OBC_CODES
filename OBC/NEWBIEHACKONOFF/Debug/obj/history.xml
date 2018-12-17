@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT -I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include -I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\config -I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\include -I..\..\..\..\..\Users\ahmed\Desktop\OBC\Team Codes -I..\..\..\..\..\Users\ahmed\Desktop\OBC -I..\..\..\..\..\Users\ahmed\Desktop\OBC\cmsis -I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS -I..\..\..\..\..\Users\ahmed\Desktop\OBC\cmsis_boot -I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder -I..\..\..\..\..\Users\ahmed\Desktop\OBC\Team Codes\Ahmed Ashour (UART.SPI -I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC -I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports -I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include -I..\..\..\..\..\Users\ahmed\Desktop -I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3 -I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable -I..\..\..\..\..\Users\ahmed">
+      <target file="tasks.o" lastModified="167b44bfeb7">
+         <source file="..\..\..\..\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\tasks.c" lastModified="1672d0895e9"/>
+      </target>
+      <target file="trcKernelPort.o" lastModified="167b44c0533">
+         <source file="..\..\..\TraceAnaylzer_code\trcKernelPort.c" lastModified="16711ab24c0"/>
+      </target>
+      <target file="stream_buffer.o" lastModified="167b44c0673">
+         <source file="..\..\..\..\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\stream_buffer.c" lastModified="165b60468d3"/>
+      </target>
+      <target file="event_groups.o" lastModified="167b44c087b">
+         <source file="..\..\..\..\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\event_groups.c" lastModified="165b60467bf"/>
+      </target>
+      <target file="ADC_INTERNAL_TEMP.o" lastModified="167b44c006f">
+         <source file="..\..\..\Team Codes\Eslam , MAMDOH (INTERNAL TEMP ADC)\ADC_INTERNAL_TEMP.c" lastModified="167a4edf0af"/>
+      </target>
+      <target file="SEGGER_RTT.o" lastModified="167b44c0b5f">
+         <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\SEGGER_RTT.c" lastModified="16711ab24c0"/>
+      </target>
+      <target file="croutine.o" lastModified="167b44c071d">
+         <source file="..\..\..\..\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\croutine.c" lastModified="165b60467bc"/>
+      </target>
+      <target file="i2c.o" lastModified="167b44bf813">
+         <source file="..\..\..\i2c.c" lastModified="167b44bedeb"/>
+      </target>
+      <target file="UART.o" lastModified="167b44c0907">
+         <source file="..\..\..\Team Codes\Ahmed Ashour (UART.SPI\UART.c" lastModified="1679360dc2d"/>
+      </target>
+      <target file="queue.o" lastModified="167b44c03d5">
+         <source file="..\..\..\..\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\queue.c" lastModified="165b60468ca"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="167b44bf90d">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="167a4099d94"/>
+      </target>
+      <target file="freeRTOStask.o" lastModified="167b44bfacf">
+         <source file="..\..\..\freeRTOStask.c" lastModified="167a4d15a9a"/>
+      </target>
+      <target file="list.o" lastModified="167b44c015f">
+         <source file="..\..\..\..\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\list.c" lastModified="165b60467c2"/>
+      </target>
+      <target file="port.o" lastModified="167b44c0475">
+         <source file="..\..\..\..\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\port.c" lastModified="165b60467f2"/>
+      </target>
+      <target file="timers.o" lastModified="167b44bfd63">
+         <source file="..\..\..\..\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\timers.c" lastModified="165b60468f3"/>
+      </target>
+      <target file="trcSnapshotRecorder.o" lastModified="167b44c0989">
+         <source file="..\..\..\TraceAnaylzer_code\trcSnapshotRecorder.c" lastModified="16711ab24c0"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="167b44bf89f">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="166c71788de"/>
+      </target>
+      <target file="trcStreamingPort.o" lastModified="167b44c0a15">
+         <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\trcStreamingPort.c" lastModified="16711ab24c0"/>
+      </target>
+      <target file="SPI.o" lastModified="167b44c07b3">
+         <source file="..\..\..\Team Codes\Ahmed Ashour (UART.SPI\SPI.c" lastModified="167b44bedc3"/>
+      </target>
+      <target file="testled.o" lastModified="167b44bff9d">
+         <source file="..\..\..\testled.c" lastModified="167a4ebadc2"/>
+      </target>
+      <target file="trcStreamingRecorder.o" lastModified="167b44c02c7">
+         <source file="..\..\..\TraceAnaylzer_code\trcStreamingRecorder.c" lastModified="16711ab24c0"/>
+      </target>
+      <target file="heap_1.o" lastModified="167b44c0ab5">
+         <source file="..\..\..\..\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\MemMang\heap_1.c" lastModified="165b6046870"/>
+      </target>
+      <target file="main.o" lastModified="167b44bfbe7">
+         <source file="..\..\..\main.c" lastModified="167a4d3c94e"/>
+      </target>
+   </processor>
+</history>

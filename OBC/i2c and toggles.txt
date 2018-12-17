@@ -1,0 +1,108 @@
+#include "stm32f10x.h"
+
+
+#define WAITING_START_BIT    (((I2C1->SR1)  & (1<<0)) >> 0 )  //SB is set
+#define WAITING_ACK          (((I2C1->SR1)  & (1<<7)) >> 7 )
+#define WAITING_ADDR_SENDING (((I2C1->SR1)  & (1<<1)) >> 1 )
+#define WAITING_SENDING_BYE  (((I2C1->SR1)  & (1<<1)) >> 1 )
+
+
+void PC13_toggle ()
+{
+int i = 0 ;
+ RCC->APB2ENR |= RCC_APB2ENR_IOPCEN ; /// enable clock for GPIO_C
+ GPIOC->CRH &=~ GPIO_CRH_CNF13 ;
+ GPIOC->CRH |= GPIO_CRH_MODE13_0 ;
+ for(i=0;i<1000000;i++)
+ GPIOC->BSRR |= (1<<13) ;
+ for(i=0;i<1000000;i++)
+ {
+ GPIOC->BSRR &=~(1<<13) ;
+ GPIOC->BSRR |= (1<<29) ;
+ }
+}
+void PC13_on_off (int x)
+{
+
+ RCC->APB2ENR |= RCC_APB2ENR_IOPCEN ; /// enable clock for GPIO_C
+ GPIOC->CRH &=~ GPIO_CRH_CNF13 ;
+ GPIOC->CRH |= GPIO_CRH_MODE13_0 ;
+ if (x==0)
+ {
+ GPIOC->BSRR |= (1<<13) ;
+ GPIOC->BSRR &=~ (1<<29) ;
+ }
+ else
+ {GPIOC->BSRR &=~(1<<13) ;
+ GPIOC->BSRR |= (1<<29) ;
+ }
+}
+void I2C_GPIO_init ()
+{
+	 RCC->APB1ENR |= (1<<21) ;            /// enable clock for I2C1
+	 RCC->APB2ENR |= RCC_APB2ENR_IOPBEN ; /// enable clock for GPIO_B
+	 RCC->APB2ENR |= (1<<0) ;             /// enable clock for AFIO
+	 GPIOB->CRL |= 0xEE000000 ;
+	 AFIO->MAPR &=~(1<<1);
+}
+
+void I2C_init_Master_send_receive()
+{
+
+	int slaveaddressthatstmwillcallon = 9 ;  /// slave address of device
+	int slaveaddresslocation = 10 ;         /// location  of device that stm want to read
+	int slaveaddressofstm ;                  ///slave address of stm that you should call it with and then you should specify address of location that
+	int datatobesent = 8 ;                  /// data to be sent
+	int generalcall = 0 ;
+
+	I2C1->CR1 &=~ (1<<0);        ///disable i2c
+    I2C1->CR1 |= (1<<10);      ///enable I2C ACK
+    //I2C1->CR1 |= (1<<6) ;         ///enable general call
+	I2C1->CR2 |= 0x8 ;          ///peripheral input clock = 8 Mhz --- Standard mode i2c
+
+	I2C1->TRISE = 0x9 ;        ///maximam rise time
+
+	I2C1->CCR |= 0x28 ;        /// clock control registers clock control to generate 100khz from input 8Mhz
+	I2C1->CCR &=~ (1<<15) ;    /// SM mode selected
+    I2C1->CCR  &=~ (1<<14);    /// duty cycle 2
+
+	I2C1->OAR1 |= (0x10<<1) ;  ///own address of STM in slave mode
+	I2C1->OAR1 |= (1<<15) ;    /// address 7bit mode selected
+	I2C1->OAR1 |= (1<<14) ;    /// should kept 1 by software
+
+    I2C1->CR1 |= (1<<0);       ///enable i2c
+
+
+
+    /* STM logic master transmiter */
+    ////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////
+    I2C1->CR1 |= (1<<8);                                              /// generate start bit
+    while( !WAITING_START_BIT );                                      /// waiting for complete start geneartion (SB)
+    I2C1->SR1 ;
+    I2C1->DR = (slaveaddressthatstmwillcallon<<1) | (0);               /// sending address of slave and 0 indicates (0)--> write
+    while(!WAITING_ADDR_SENDING);
+    I2C1->SR1 ;                                                        /// to completely clear (ADDR) bit
+    I2C1->SR2 ;
+    I2C1->DR = datatobesent;                                          /// send byte of data to this location
+    while(!WAITING_ACK) ;                                             /// wait for acknowledge of slave
+    I2C1->CR1 |= (1<<9);                                              ///generated stop transission
+
+
+}
+int main(void)
+{
+
+
+
+
+
+	while(1)
+    {
+
+
+		PC13_on_off(1);
+    }
+}
+

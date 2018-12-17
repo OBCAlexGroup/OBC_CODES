@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/IC:\Users\ASHRAF\Desktop\4th communication\graduation project /IC:\Users\ASHRAF\Desktop\4th communication\graduation project\payload\OV7670_DRIVER /IC:\Users\ASHRAF\Desktop\4th communication\graduation project\payload\OV7670_DRIVER\cmsis /IC:\Users\ASHRAF\Desktop\4th communication\graduation project\payload /IC:\Users\ASHRAF\Desktop\4th communication\graduation project\payload\OV7670_DRIVER\cmsis_boot">
+      <source file="..\..\..\cmsis_boot\stm32f10x.h" lastModified="167ac6d3a0c">
+         <include file="..\..\..\cmsis\core_cm3.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f10x.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x_conf.h"/>
+      </source>
+      <source file="..\..\..\OV7670_Func.c" lastModified="167ae2105ad">
+         <include file="..\..\..\OV7670_Reg.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="167ac6c5566">
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="167ac6c5569">
+      </source>
+      <source file="..\..\..\cmsis\core_cm3.h" lastModified="167ac6c5175">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="167ac6d3602">
+      </source>
+      <source file="..\..\..\main.c" lastModified="167ad4b66e3">
+         <include file="..\..\..\OV7670_Func.c"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="167ac6d3632">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="167ac6d365f">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="167ac6d365c">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+   </includePath>
+</dependencies>

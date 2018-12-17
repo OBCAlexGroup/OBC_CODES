@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.8.3 -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=USART_Driver_trial.map -O0 --gc-sections -LF:\CoIDE\configuration\ProgramData\USART_Driver_trial -TF:\CoIDE\configuration\ProgramData\USART_Driver_trial/arm-gcc-link.ld -g">
+      <target file="USART_Driver_trial.elf" lastModified="167af40967f">
+         <source file="..\obj\system_stm32f10x.o" lastModified="167aeef01d1"/>
+         <source file="..\obj\USART_Driver.o" lastModified="167af408f6f"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="167aeef0324"/>
+         <source file="..\obj\main.o" lastModified="167af4090db"/>
+      </target>
+   </processor>
+</history>

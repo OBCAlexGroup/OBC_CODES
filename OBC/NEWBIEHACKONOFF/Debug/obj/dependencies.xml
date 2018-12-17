@@ -1,0 +1,781 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT /I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include /I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\config /I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\include /I..\..\..\workspace\NEWBIEHACKONOFF\cmsis_boot /I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS /I..\..\..\workspace\NEWBIEHACKONOFF\Team Codes /I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder /I..\..\..\workspace\NEWBIEHACKONOFF\Team Codes\Ahmed Ashour (UART.SPI /I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC /I..\..\..\workspace\NEWBIEHACKONOFF\cmsis /I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports /I..\..\..\workspace /I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include /I..\..\..\workspace\NEWBIEHACKONOFF /I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3 /I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable /I..\..\..">
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\timers.c" lastModified="165b6046cdb">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\queue.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\timers.h"/>
+      </source>
+      <source file="..\..\..\testled.c" lastModified="167a4ebadc2">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_LPC23xx\portmacro.h" lastModified="165b6046157">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\ATMega323\portmacro.h" lastModified="165b60461b1">
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\SEGGER_RTT.c" lastModified="16711ab28a8">
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\include\SEGGER_RTT.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="166c71788df">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\stream_buffer.h" lastModified="165b6046127">
+      </source>
+      <source file="..\..\..\TraceAnaylzer_code\trcKernelPort.c" lastModified="16711ab24c0">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\queue.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\timers.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\event_groups.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\stream_buffer.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="166c71788de">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm3.h" lastModified="166c7178ccc">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\AtmelSAM9XE\portmacro.h" lastModified="165b604659e">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\MCF5235\portmacro.h" lastModified="143641ba2ee">
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\include\trcStreamingPort.h" lastModified="167a4b76c1b">
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\include\SEGGER_RTT_Conf.h"/>
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\include\SEGGER_RTT.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\config\trcSnapshotConfig.h" lastModified="16711ab24c0">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\MSP430\portmacro.h" lastModified="165b60461c3">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\CodeWarrior\HCS12\portmacro.h" lastModified="165b604614e">
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="167a4099d94">
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcRecorder.h" lastModified="16711ab2c90">
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\config\trcConfig.h"/>
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcPortDefines.h"/>
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcHardwarePort.h"/>
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcKernelPort.h"/>
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcHardwarePort.h"/>
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\include\trcStreamingPort.h"/>
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcKernelPort.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\croutine.h" lastModified="165b60460f8">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\list.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\SDCC\Cygnal\portmacro.h" lastModified="165b604621a">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="166c71788dc">
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcKernelPort.h" lastModified="16711ab24c0">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcPortDefines.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\Softune\MB96340\portmacro.h" lastModified="165b6046604">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\STR71x\portmacro.h" lastModified="165b60465bd">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\event_groups.c" lastModified="165b6046ba7">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\timers.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\event_groups.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\ARM_CM3\portmacro.h" lastModified="165b604658f">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\MemMang\heap_1.c" lastModified="165b6046c58">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\STR91x\portmacro.h" lastModified="165b60465c3">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\PPC440_Xilinx\portmacro.h" lastModified="165b6046575">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\STR75x\portmacro.h" lastModified="165b6046198">
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcPortDefines.h" lastModified="16711ab24c0">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\MPLAB\PIC18F\portmacro.h" lastModified="165b60461e3">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\LPC2000\portmacro.h" lastModified="165b60465a8">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\MSP430F449\portmacro.h" lastModified="165b6046184">
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="166c71790b6">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\BCC\16BitDOS\Flsh186\prtmacro.h" lastModified="165b604613d">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\list.c" lastModified="165b6046baa">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\list.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h" lastModified="165b6046211">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\CodeWarrior\ColdFire_V2\portmacro.h" lastModified="165b604614c">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\queue.c" lastModified="165b604709a">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\queue.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\croutine.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\tasks.c" lastModified="1672d08a971">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\timers.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\stack_macros.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\PPC405_Xilinx\portmacro.h" lastModified="165b6046572">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h" lastModified="165b6046cba">
+         <include file="..\..\..\FreeRTOSConfig.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\projdefs.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\portable.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\config\trcConfig.h" lastModified="167a4aff383">
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcPortDefines.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\config\trcSnapshotConfig.h"/>
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\config\trcStreamingConfig.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_AT91SAM7S\portmacro.h" lastModified="165b6046153">
+      </source>
+      <source file="..\..\..\TraceAnaylzer_code\trcStreamingRecorder.c" lastModified="16711ab2c90">
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcRecorder.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcHardwarePort.h" lastModified="16711ab4018">
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcPortDefines.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\H8S2329\portmacro.h" lastModified="165b6046177">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\HCS12\portmacro.h" lastModified="165b6046178">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\event_groups.h" lastModified="165b60460fe">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\timers.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\queue.h" lastModified="165b6046119">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+      </source>
+      <source file="..\..\..\i2c.h" lastModified="1675b646b0c">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\include\SEGGER_RTT.h" lastModified="16711ab24c0">
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\include\SEGGER_RTT_Conf.h"/>
+      </source>
+      <source file="..\..\..\Team Codes\Ahmed Ashour (UART.SPI\UART.h" lastModified="16789d886e7">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\MicroBlaze\portmacro.h" lastModified="165b604617e">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\timers.h" lastModified="165b6046137">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\croutine.c" lastModified="165b60467bc">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\croutine.h"/>
+      </source>
+      <source file="..\..\..\i2c.c" lastModified="167a4ef791a">
+         <include file="..\..\..\i2c.h"/>
+      </source>
+      <source file="..\..\..\Team Codes\Ahmed Ashour (UART.SPI\UART.c" lastModified="1679360dc2d">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\Team Codes\Ahmed Ashour (UART.SPI\UART.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_LPC2000\portmacro.h" lastModified="165b6046155">
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="166c71790b5">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\V850ES\portmacro.h" lastModified="165b60461df">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\oWatcom\16BitDOS\Flsh186\portmacro.h" lastModified="165b60461f6">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\STR75x\portmacro.h" lastModified="165b60465c0">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\MPLAB\PIC24_dsPIC\portmacro.h" lastModified="165b60461e5">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\portable.h" lastModified="165b6046113">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\deprecated_definitions.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\mpu_wrappers.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\list.h" lastModified="165b6046106">
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\trcStreamingPort.c" lastModified="16711ab24c0">
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcRecorder.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\oWatcom\16BitDOS\PC\portmacro.h" lastModified="165b60461f8">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\stack_macros.h" lastModified="165b6046124">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\BCC\16BitDOS\PC\prtmacro.h" lastModified="165b604613f">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\projdefs.h" lastModified="165b6046115">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h" lastModified="165b61f9243">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\list.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\config\trcStreamingConfig.h" lastModified="16711ab24c0">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" lastModified="165b6046160">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\deprecated_definitions.h" lastModified="165b6046cb3">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\oWatcom\16BitDOS\PC\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\oWatcom\16BitDOS\Flsh186\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ATMega323\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\ATMega323\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\MPLAB\PIC24_dsPIC\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\MPLAB\PIC24_dsPIC\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\MPLAB\PIC18F\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\MPLAB\PIC32MX\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\SDCC\Cygnal\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_LPC2000\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_LPC23xx\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\MSP430\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\MSP430F449\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\Rowley\MSP430F449\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_AT91SAM7S\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\AtmelSAM7S64\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\AtmelSAM9XE\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\LPC2000\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\STR71x\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\STR75x\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\STR75x\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\STR91x\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\H8S2329\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_AT91FR40008\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\ARM_CM3\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\ARM_CM3\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\CodeWarrior\HCS12\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\MicroBlaze\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\Paradigm\Tern_EE\small\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\HCS12\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\MCF5235\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ColdFire_V2\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\CodeWarrior\ColdFire_V2\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\PPC405_Xilinx\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\PPC440_Xilinx\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\Softune\MB96340\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\BCC\16BitDOS\PC\prtmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\BCC\16BitDOS\Flsh186\prtmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\V850ES\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\V850ES\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\V850ES\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\V850ES\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\V850ES\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\78K0R\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\78K0R\portmacro.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\AtmelSAM7S64\portmacro.h" lastModified="165b60461b4">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h" lastModified="165b604620b">
+      </source>
+      <source file="..\..\..\freeRTOStask.c" lastModified="167a4d15a9a">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\timers.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\include\SEGGER_RTT_Conf.h" lastModified="16711ab28a8">
+      </source>
+      <source file="..\..\..\FreeRTOSConfig.h" lastModified="167a4d54cd5">
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcRecorder.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\mpu_wrappers.h" lastModified="165b6046111">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\78K0R\portmacro.h" lastModified="165b604619d">
+      </source>
+      <source file="..\..\..\main.h" lastModified="167a40c6cee">
+      </source>
+      <source file="..\..\..\Team Codes\Eslam , MAMDOH (INTERNAL TEMP ADC)\ADC_INTERNAL_TEMP.c" lastModified="167a4edf0af">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\main.c" lastModified="167a4d3c94e">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\timers.h"/>
+         <include file="..\..\..\main.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\port.c" lastModified="165b60467f2">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_AT91FR40008\portmacro.h" lastModified="165b6046150">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ColdFire_V2\portmacro.h" lastModified="165b6046173">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\MPLAB\PIC32MX\portmacro.h" lastModified="165b60465d4">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ATMega323\portmacro.h" lastModified="165b604616d">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x.h" lastModified="166c7178cc4">
+         <include file="..\..\..\cmsis\core_cm3.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f10x.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x_conf.h"/>
+      </source>
+      <source file="..\..\..\TraceAnaylzer_code\trcSnapshotRecorder.c" lastModified="16711ab3078">
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcRecorder.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\stream_buffer.c" lastModified="165b60470a3">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\stream_buffer.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\Paradigm\Tern_EE\small\portmacro.h" lastModified="165b60461fe">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\Rowley\MSP430F449\portmacro.h" lastModified="165b604620a">
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT /I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include /I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\config /I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\include /I..\..\..\workspace\NEWBIEHACKONOFF\cmsis_boot /I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS /I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder /I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC /I..\..\..\workspace\NEWBIEHACKONOFF\cmsis /I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports /I..\..\..\workspace /I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include /I..\..\..\workspace\NEWBIEHACKONOFF /I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3 /I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable /I..\..\..">
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_LPC23xx\portmacro.h" lastModified="165b6046157">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\ATMega323\portmacro.h" lastModified="165b60461b1">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="166c71788df">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\stream_buffer.h" lastModified="165b6046127">
+      </source>
+      <source file="..\..\..\TraceAnaylzer_code\trcKernelPort.c" lastModified="16711ab24c0">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\queue.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\timers.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\event_groups.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\stream_buffer.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="166c71788de">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\MCF5235\portmacro.h" lastModified="143641ba2ee">
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\include\trcStreamingPort.h" lastModified="167a4b76c1b">
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\include\SEGGER_RTT_Conf.h"/>
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\include\SEGGER_RTT.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\config\trcSnapshotConfig.h" lastModified="16711ab24c0">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\MSP430\portmacro.h" lastModified="165b60461c3">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\CodeWarrior\HCS12\portmacro.h" lastModified="165b604614e">
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="167a4099d94">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\croutine.h" lastModified="165b60460f8">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\list.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\SDCC\Cygnal\portmacro.h" lastModified="165b604621a">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="166c71788dc">
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcKernelPort.h" lastModified="16711ab24c0">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcPortDefines.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\STR75x\portmacro.h" lastModified="165b6046198">
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcPortDefines.h" lastModified="16711ab24c0">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\MPLAB\PIC18F\portmacro.h" lastModified="165b60461e3">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\MSP430F449\portmacro.h" lastModified="165b6046184">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\BCC\16BitDOS\Flsh186\prtmacro.h" lastModified="165b604613d">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h" lastModified="165b6046211">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\CodeWarrior\ColdFire_V2\portmacro.h" lastModified="165b604614c">
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\config\trcConfig.h" lastModified="167a4aff383">
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcPortDefines.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\config\trcSnapshotConfig.h"/>
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\config\trcStreamingConfig.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_AT91SAM7S\portmacro.h" lastModified="165b6046153">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\H8S2329\portmacro.h" lastModified="165b6046177">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\HCS12\portmacro.h" lastModified="165b6046178">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\event_groups.h" lastModified="165b60460fe">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\timers.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\queue.h" lastModified="165b6046119">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+      </source>
+      <source file="..\..\..\i2c.h" lastModified="1675b646b0c">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\include\SEGGER_RTT.h" lastModified="16711ab24c0">
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\include\SEGGER_RTT_Conf.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\MicroBlaze\portmacro.h" lastModified="165b604617e">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\timers.h" lastModified="165b6046137">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\croutine.c" lastModified="165b60467bc">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\croutine.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_LPC2000\portmacro.h" lastModified="165b6046155">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\V850ES\portmacro.h" lastModified="165b60461df">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\oWatcom\16BitDOS\Flsh186\portmacro.h" lastModified="165b60461f6">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\MPLAB\PIC24_dsPIC\portmacro.h" lastModified="165b60461e5">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\portable.h" lastModified="165b6046113">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\deprecated_definitions.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\mpu_wrappers.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\list.h" lastModified="165b6046106">
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\streamports\Jlink_RTT\trcStreamingPort.c" lastModified="16711ab24c0">
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcRecorder.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\oWatcom\16BitDOS\PC\portmacro.h" lastModified="165b60461f8">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\stack_macros.h" lastModified="165b6046124">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\BCC\16BitDOS\PC\prtmacro.h" lastModified="165b604613f">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\projdefs.h" lastModified="165b6046115">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h" lastModified="165b61f9243">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\list.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\config\trcStreamingConfig.h" lastModified="16711ab24c0">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" lastModified="165b6046160">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\AtmelSAM7S64\portmacro.h" lastModified="165b60461b4">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h" lastModified="165b604620b">
+      </source>
+      <source file="..\..\..\freeRTOStask.c" lastModified="167a4d15a9a">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\timers.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOSConfig.h" lastModified="167a4d54cd5">
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcRecorder.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\mpu_wrappers.h" lastModified="165b6046111">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\78K0R\portmacro.h" lastModified="165b604619d">
+      </source>
+      <source file="..\..\..\main.h" lastModified="167a40c6cee">
+      </source>
+      <source file="..\..\..\main.c" lastModified="167a4d3c94e">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\timers.h"/>
+         <include file="..\..\..\main.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\port.c" lastModified="165b60467f2">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_AT91FR40008\portmacro.h" lastModified="165b6046150">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ColdFire_V2\portmacro.h" lastModified="165b6046173">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ATMega323\portmacro.h" lastModified="165b604616d">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\Paradigm\Tern_EE\small\portmacro.h" lastModified="165b60461fe">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\Rowley\MSP430F449\portmacro.h" lastModified="165b604620a">
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC /I..\..\..\workspace\NEWBIEHACKONOFF\cmsis /I..\..\..\workspace /I..\..\..\workspace\NEWBIEHACKONOFF\cmsis_boot /I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include /I..\..\..\workspace\NEWBIEHACKONOFF\TraceAnaylzer_code /I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include /I..\..\..\workspace\NEWBIEHACKONOFF /I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3 /I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable /I..\..\..">
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_LPC23xx\portmacro.h" lastModified="165b6046157">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\ATMega323\portmacro.h" lastModified="165b60461b1">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="166c71788df">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\stream_buffer.h" lastModified="165b6046127">
+      </source>
+      <source file="..\..\..\TraceAnaylzer_code\trcKernelPort.c" lastModified="16711ab24c0">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\queue.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\timers.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\event_groups.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\stream_buffer.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="166c71788de">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\MCF5235\portmacro.h" lastModified="143641ba2ee">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\MSP430\portmacro.h" lastModified="165b60461c3">
+      </source>
+      <source file="..\..\..\TraceAnaylzer_code\trcSnapshotConfig.h" lastModified="16711ab24c0">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\CodeWarrior\HCS12\portmacro.h" lastModified="165b604614e">
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="167a4099d94">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\croutine.h" lastModified="165b60460f8">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\list.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\SDCC\Cygnal\portmacro.h" lastModified="165b604621a">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="166c71788dc">
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcKernelPort.h" lastModified="16711ab24c0">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcPortDefines.h"/>
+      </source>
+      <source file="..\..\..\TraceAnaylzer_code\trcConfig.h" lastModified="167a4a13a14">
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcPortDefines.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\TraceAnaylzer_code\trcSnapshotConfig.h"/>
+         <include file="..\..\..\TraceAnaylzer_code\trcStreamingConfig.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\STR75x\portmacro.h" lastModified="165b6046198">
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcPortDefines.h" lastModified="16711ab24c0">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\MPLAB\PIC18F\portmacro.h" lastModified="165b60461e3">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\MSP430F449\portmacro.h" lastModified="165b6046184">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\BCC\16BitDOS\Flsh186\prtmacro.h" lastModified="165b604613d">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h" lastModified="165b6046211">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\CodeWarrior\ColdFire_V2\portmacro.h" lastModified="165b604614c">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_AT91SAM7S\portmacro.h" lastModified="165b6046153">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\H8S2329\portmacro.h" lastModified="165b6046177">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\HCS12\portmacro.h" lastModified="165b6046178">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\event_groups.h" lastModified="165b60460fe">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\timers.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\queue.h" lastModified="165b6046119">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+      </source>
+      <source file="..\..\..\i2c.h" lastModified="1675b646b0c">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\MicroBlaze\portmacro.h" lastModified="165b604617e">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\timers.h" lastModified="165b6046137">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\croutine.c" lastModified="165b60467bc">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\croutine.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_LPC2000\portmacro.h" lastModified="165b6046155">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\V850ES\portmacro.h" lastModified="165b60461df">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\oWatcom\16BitDOS\Flsh186\portmacro.h" lastModified="165b60461f6">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\MPLAB\PIC24_dsPIC\portmacro.h" lastModified="165b60461e5">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\portable.h" lastModified="165b6046113">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\deprecated_definitions.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\mpu_wrappers.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\list.h" lastModified="165b6046106">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\oWatcom\16BitDOS\PC\portmacro.h" lastModified="165b60461f8">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\stack_macros.h" lastModified="165b6046124">
+      </source>
+      <source file="..\..\..\TraceAnaylzer_code\trcStreamingConfig.h" lastModified="16711ab24c0">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\BCC\16BitDOS\PC\prtmacro.h" lastModified="165b604613f">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\projdefs.h" lastModified="165b6046115">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h" lastModified="165b61f9243">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\list.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" lastModified="165b6046160">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\AtmelSAM7S64\portmacro.h" lastModified="165b60461b4">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h" lastModified="165b604620b">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\mpu_wrappers.h" lastModified="165b6046111">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\78K0R\portmacro.h" lastModified="165b604619d">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\port.c" lastModified="165b60467f2">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_AT91FR40008\portmacro.h" lastModified="165b6046150">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ColdFire_V2\portmacro.h" lastModified="165b6046173">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ATMega323\portmacro.h" lastModified="165b604616d">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\Paradigm\Tern_EE\small\portmacro.h" lastModified="165b60461fe">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\Rowley\MSP430F449\portmacro.h" lastModified="165b604620a">
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC /I..\..\..\workspace\NEWBIEHACKONOFF\cmsis /I..\..\..\workspace /I..\..\..\workspace\NEWBIEHACKONOFF\cmsis_boot /I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include /I..\..\..\workspace\NEWBIEHACKONOFF\TraceAnaylzer_code /I..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include /I..\..\..\workspace\NEWBIEHACKONOFF /I..\..\.. /I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3 /I..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable">
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_LPC23xx\portmacro.h" lastModified="165b6046157">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\ATMega323\portmacro.h" lastModified="165b60461b1">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="166c71788df">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\stream_buffer.h" lastModified="165b6046127">
+      </source>
+      <source file="..\..\..\TraceAnaylzer_code\trcKernelPort.c" lastModified="16711ab24c0">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\queue.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\timers.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\event_groups.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\stream_buffer.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="166c71788de">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\MCF5235\portmacro.h" lastModified="143641ba2ee">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\MSP430\portmacro.h" lastModified="165b60461c3">
+      </source>
+      <source file="..\..\..\TraceAnaylzer_code\trcSnapshotConfig.h" lastModified="16711ab24c0">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\CodeWarrior\HCS12\portmacro.h" lastModified="165b604614e">
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="167a4099d94">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\croutine.h" lastModified="165b60460f8">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\list.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\SDCC\Cygnal\portmacro.h" lastModified="165b604621a">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="166c71788dc">
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcKernelPort.h" lastModified="16711ab24c0">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcPortDefines.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\STR75x\portmacro.h" lastModified="165b6046198">
+      </source>
+      <source file="..\..\..\..\..\..\..\Program Files\Percepio\Tracealyzer 4\FreeRTOS\TraceRecorder\include\trcPortDefines.h" lastModified="16711ab24c0">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\MPLAB\PIC18F\portmacro.h" lastModified="165b60461e3">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\MSP430F449\portmacro.h" lastModified="165b6046184">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\BCC\16BitDOS\Flsh186\prtmacro.h" lastModified="165b604613d">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h" lastModified="165b6046211">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\CodeWarrior\ColdFire_V2\portmacro.h" lastModified="165b604614c">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_AT91SAM7S\portmacro.h" lastModified="165b6046153">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\H8S2329\portmacro.h" lastModified="165b6046177">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\HCS12\portmacro.h" lastModified="165b6046178">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\event_groups.h" lastModified="165b60460fe">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\timers.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\queue.h" lastModified="165b6046119">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+      </source>
+      <source file="..\..\..\i2c.h" lastModified="1675b646b0c">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\MicroBlaze\portmacro.h" lastModified="165b604617e">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\timers.h" lastModified="165b6046137">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\croutine.c" lastModified="165b60467bc">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\croutine.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_LPC2000\portmacro.h" lastModified="165b6046155">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\V850ES\portmacro.h" lastModified="165b60461df">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\oWatcom\16BitDOS\Flsh186\portmacro.h" lastModified="165b60461f6">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\MPLAB\PIC24_dsPIC\portmacro.h" lastModified="165b60461e5">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\portable.h" lastModified="165b6046113">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\deprecated_definitions.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\mpu_wrappers.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\list.h" lastModified="165b6046106">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\oWatcom\16BitDOS\PC\portmacro.h" lastModified="165b60461f8">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\stack_macros.h" lastModified="165b6046124">
+      </source>
+      <source file="..\..\..\TraceAnaylzer_code\trcStreamingConfig.h" lastModified="16711ab24c0">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\BCC\16BitDOS\PC\prtmacro.h" lastModified="165b604613f">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\projdefs.h" lastModified="165b6046115">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h" lastModified="165b61f9243">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\list.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" lastModified="165b6046160">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\AtmelSAM7S64\portmacro.h" lastModified="165b60461b4">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h" lastModified="165b604620b">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\mpu_wrappers.h" lastModified="165b6046111">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\IAR\78K0R\portmacro.h" lastModified="165b604619d">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM_CM3\port.c" lastModified="165b60467f2">
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ARM7_AT91FR40008\portmacro.h" lastModified="165b6046150">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ColdFire_V2\portmacro.h" lastModified="165b6046173">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\GCC\ATMega323\portmacro.h" lastModified="165b604616d">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\Paradigm\Tern_EE\small\portmacro.h" lastModified="165b60461fe">
+      </source>
+      <source file="..\..\..\..\..\..\..\Users\ahmed\Desktop\RTOS files\FreeRTOSv10.1.1\FreeRTOS\Source\portable\Rowley\MSP430F449\portmacro.h" lastModified="165b604620a">
+      </source>
+   </includePath>
+</dependencies>

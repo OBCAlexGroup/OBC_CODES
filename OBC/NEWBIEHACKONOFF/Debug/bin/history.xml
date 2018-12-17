@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="5.4.1 -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=NEWBIEHACKONOFF.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\NEWBIEHACKONOFF -TC:\CooCox\CoIDE\configuration\ProgramData\NEWBIEHACKONOFF/arm-gcc-link.ld -g">
+      <target file="NEWBIEHACKONOFF.elf" lastModified="167a4d55e6d">
+         <source file="..\obj\i2c.o" lastModified="167a4aff713"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="167a4aff7bd"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="167a4aff843"/>
+         <source file="..\obj\freeRTOStask.o" lastModified="167a4d550f0"/>
+         <source file="..\obj\main.o" lastModified="167a4d551b0"/>
+         <source file="..\obj\timers.o" lastModified="167a4d552be"/>
+         <source file="..\obj\tasks.o" lastModified="167a4d55401"/>
+         <source file="..\obj\testled.o" lastModified="167a4affcb9"/>
+         <source file="..\obj\list.o" lastModified="167a4d554ab"/>
+         <source file="..\obj\trcStreamingRecorder.o" lastModified="167a4d555b3"/>
+         <source file="..\obj\queue.o" lastModified="167a4d556af"/>
+         <source file="..\obj\port.o" lastModified="167a4d5574a"/>
+         <source file="..\obj\trcKernelPort.o" lastModified="167a4d55805"/>
+         <source file="..\obj\stream_buffer.o" lastModified="167a4d558e3"/>
+         <source file="..\obj\croutine.o" lastModified="167a4d55972"/>
+         <source file="..\obj\event_groups.o" lastModified="167a4d55a35"/>
+         <source file="..\obj\trcSnapshotRecorder.o" lastModified="167a4d55abf"/>
+         <source file="..\obj\trcStreamingPort.o" lastModified="167a4d55b4a"/>
+         <source file="..\obj\heap_1.o" lastModified="167a4d55bf5"/>
+         <source file="..\obj\SEGGER_RTT.o" lastModified="167a4b00504"/>
+      </target>
+   </processor>
+</history>

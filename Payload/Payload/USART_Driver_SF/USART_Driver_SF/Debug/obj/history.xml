@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc 8.1.0 x86_64-w64-mingw32 -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -IC:\Users\ASHRAF\Desktop\4th communication\graduation project -IC:\Users\ASHRAF\Desktop\4th communication\graduation project\payload\USART_Driver_trial\cmsis -IC:\Users\ASHRAF\Desktop\4th communication\graduation project\payload -IC:\Users\ASHRAF\Desktop\4th communication\graduation project\payload\USART_Driver_trial\cmsis_boot -IC:\Users\ASHRAF\Desktop\4th communication\graduation project\payload\USART_Driver_trial">
+      <target file="startup_stm32f10x_md.o" lastModified="167aeef0324">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="167ae8e0d0d"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="167aeef01d1">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="167ae8e0d3f"/>
+      </target>
+      <target file="main.o" lastModified="167af4090db">
+         <source file="..\..\..\main.c" lastModified="167af40809d"/>
+      </target>
+      <target file="USART_Driver.o" lastModified="167af408f6f">
+         <source file="..\..\..\USART_Driver.c" lastModified="167af28445e"/>
+      </target>
+   </processor>
+</history>

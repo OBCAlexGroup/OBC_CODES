@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc 8.1.0 x86_64-w64-mingw32 -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -IC:\Users\ASHRAF\Desktop\4th communication\graduation project -IC:\Users\ASHRAF\Desktop\4th communication\graduation project\payload\OV7670_DRIVER -IC:\Users\ASHRAF\Desktop\4th communication\graduation project\payload\OV7670_DRIVER\cmsis -IC:\Users\ASHRAF\Desktop\4th communication\graduation project\payload -IC:\Users\ASHRAF\Desktop\4th communication\graduation project\payload\OV7670_DRIVER\cmsis_boot">
+      <target file="startup_stm32f10x_md.o" lastModified="167ac77e329">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="167ac6d3602"/>
+      </target>
+      <target file="OV7670_Func.o" lastModified="167ae210bfc">
+         <source file="..\..\..\OV7670_Func.c" lastModified="167ae2105ad"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="167ac77e1ee">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="167ac6d365c"/>
+      </target>
+      <target file="main.o" lastModified="167ae210b4a">
+         <source file="..\..\..\main.c" lastModified="167ad4b66e3"/>
+      </target>
+   </processor>
+</history>

@@ -1,0 +1,108 @@
+#include "stm32f10x.h"
+#include "FreeRTOS.h"
+#include "task.h"
+#include "timers.h"
+#include "main.h"
+
+int main(void)
+{
+
+	    vTraceEnable(TRC_START_AWAIT_HOST);
+		xTaskCreate( vTask1, "Task 1", 240, NULL, 1, NULL );
+		xTaskCreate( vTask2, "Task 2", 240, NULL, 1, NULL );
+		xTaskCreate( vTask3, "Task 3", 240, NULL, 1, NULL );
+		vTaskStartScheduler();
+	    //I2C_enable();
+    	//select_master_transmiter();
+    	//if(BUSY_BUS)
+    	 //PC13_on_off(1);
+        //select_slave_reciver();
+	    while(1)
+	    {
+
+	    }
+
+
+}
+//0x20002a90
+///0x200043A8
+
+
+
+//0x20002a90
+///0x200043A8
+
+
+
+/*
+#include "stm32f10x.h"
+#define WAITING_START_BIT    (((I2C1->SR1)  & (1<<0)) >> 0 )  //SB is set
+#define WAITING_ACK          (((I2C1->SR1)  & (1<<7)) >> 7 )
+#define WAITING_ADDR_SENDING (((I2C1->SR1)  & (1<<1)) >> 1 )
+#define SUCCESSFUL_SENDING_or_RECEVING_BYTE (((I2C1->SR1)  & (1<<2)) >> 2 )
+#define DATA_R_NOT_EMPTY     (((I2C1->SR1)  & (1<<6)) >> 6 )
+#define BUS_ERROR            (((I2C1->SR1)  & (1<<8)) >> 8 )
+#define ARBITERATION_LOSS    (((I2C1->SR1)  & (1<<9)) >> 9 )
+#define ACK_FAILURE          (((I2C1->SR1)  & (1<<10)) >> 10 )
+#define OVERRUN_UNDERRUN     (((I2C1->SR1)  & (1<<11)) >> 11)
+#define TIME_OUT             (((I2C1->SR1)  & (1<<14)) >> 14 )
+
+int STM_ADDR_ = 10 ;
+int NOT_STM_ADDR_ = 9 ;
+
+void I2C_GPIO_init ()
+{
+	 RCC->APB1ENR |= (1<<21) ;            /// enable clock for I2C1
+	 RCC->APB2ENR |= RCC_APB2ENR_IOPBEN ; /// enable clock for GPIO_B
+	 RCC->APB2ENR |= (1<<0) ;             /// enable clock for AFIO
+	 GPIOB->CRL |= 0xEE000000 ;
+	 AFIO->MAPR &=~(1<<1);
+}
+
+void I2C_init()
+{
+
+
+	I2C1->CR1 &=~ (1<<0);        ///disable i2c
+    I2C1->CR1 |= (1<<10);      ///enable I2C ACK
+    I2C1->CR1 |= (1<<6) ;         ///enable general call
+	I2C1->CR2 |= 0x8 ;          ///peripheral input clock = 8 Mhz --- Standard mode i2c
+
+	I2C1->TRISE = 0x9 ;        ///maximam rise time
+
+	I2C1->CCR |= 0x28 ;        /// clock control registers clock control to generate 100khz from input 8Mhz
+	I2C1->CCR &=~ (1<<15) ;    /// SM mode selected
+    I2C1->CCR  &=~ (1<<14);    /// duty cycle 2
+
+	I2C1->OAR1 |= (STM_ADDR_<<1) ;  ///own address of STM in slave mode
+	I2C1->OAR1 &=~ (1<<15) ;    /// address 7bit mode selected
+	I2C1->OAR1 |= (1<<14) ;    /// should kept 1 by software
+
+    I2C1->CR1 |= (1<<0);       ///enable i2c
+
+
+
+
+
+
+}
+int main(void)
+{
+	I2C_GPIO_init();
+	I2C_init();
+	while(1)
+    {
+		    I2C1->CR1 |= (1<<8);                                              /// generate start bit
+		    while( !WAITING_START_BIT );                                      /// waiting for complete start geneartion (SB)
+		    I2C1->SR1 ;
+		    I2C1->DR = (NOT_STM_ADDR_<<1) | (0);               /// sending address of slave and 0 indicates (0)--> write
+		    while(!WAITING_ADDR_SENDING);
+		    I2C1->SR1 ;                                                        /// to completely clear (ADDR) bit
+		    I2C1->SR2 ;
+		    I2C1->DR = 100;                                          /// send byte of data to this location
+		    PC13_on_off(1);
+    }
+
+}
+
+*/

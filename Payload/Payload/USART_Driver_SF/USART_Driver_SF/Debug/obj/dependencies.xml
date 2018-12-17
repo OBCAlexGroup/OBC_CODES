@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/IC:\Users\ASHRAF\Desktop\4th communication\graduation project /IC:\Users\ASHRAF\Desktop\4th communication\graduation project\payload\USART_Driver_trial\cmsis /IC:\Users\ASHRAF\Desktop\4th communication\graduation project\payload /IC:\Users\ASHRAF\Desktop\4th communication\graduation project\payload\USART_Driver_trial\cmsis_boot /IC:\Users\ASHRAF\Desktop\4th communication\graduation project\payload\USART_Driver_trial">
+      <source file="..\..\..\cmsis_boot\stm32f10x.h" lastModified="167ae8e1117">
+         <include file="..\..\..\cmsis\core_cm3.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f10x.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="167ae8dd62e">
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="167ae8dd62e">
+      </source>
+      <source file="..\..\..\cmsis\core_cm3.h" lastModified="167ae8dd237">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="167ae8e0d0d">
+      </source>
+      <source file="..\..\..\USART_Driver.h" lastModified="167af4080b6">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="167ae8e0d3f">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="167ae8e0d3f">
+      </source>
+      <source file="..\..\..\USART_Driver.c" lastModified="167af28445e">
+         <include file="..\..\..\USART_Driver.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="167ae8e0d3f">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+   </includePath>
+</dependencies>
